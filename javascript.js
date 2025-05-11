@@ -4,7 +4,8 @@ function getComputerchoice (min, max) {
     let choiceNumber = Math.floor(Math.random() * (max - min + 1) + min);
     
     let properChoice;
-    
+
+    // Assign a value based off the randomly selected number
     switch (choiceNumber) {
         case 1:
             properChoice = "Rock";
@@ -17,7 +18,8 @@ function getComputerchoice (min, max) {
             break;
     }
 
-    console.log(properChoice)
+    return properChoice;
 }
 
-getComputerchoice(1, 3)
+const computerChoice = getComputerchoice(1, 3);
+console.log(computerChoice);
